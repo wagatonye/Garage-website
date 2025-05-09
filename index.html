@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detroit Express Garage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <h2 class="logo">Detroit Express Garage</h2>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#booking">Book</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <div class="container">
+      <h1>Detroit Express Garage</h1>
+      <p>Your Trusted Vehicle Repair Partner</p>
+      <a href="#services" class="btn">Explore Services</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We offer reliable, affordable, and efficient vehicle repair services. Our team is made up of skilled professionals dedicated to getting your car back on the road safely and quickly.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Engine Diagnostics</li>
+        <li>Brake System Repairs</li>
+        <li>Oil Changes</li>
+        <li>Suspension & Steering</li>
+        <li>Tire Replacement</li>
+        <li>Car Wash & Detailing</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Phone: <a href="tel:0757672363">0757672363</a></p>
+      <p>Email: <a href="mailto:info@detroitexpressgarage.com">info@detroitexpressgarage.com</a></p>
+      <a href="https://wa.me/254757672363" class="btn">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking">
+    <div class="container">
+      <h2>Book a Service</h2>
+      <form class="booking-form" id="booking-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="service">Select Service:</label>
+          <select id="service" name="service" required>
+            <option value="">-- Choose Service --</option>
+            <option value="diagnostics">Engine Diagnostics</option>
+            <option value="brakes">Brake Repairs</option>
+            <option value="oil">Oil Change</option>
+            <option value="suspension">Suspension</option>
+            <option value="wash">Car Wash</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Preferred Date:</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message (Optional):</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Submit Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Detroit Express Garage. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
+
+</body>
+</html>
